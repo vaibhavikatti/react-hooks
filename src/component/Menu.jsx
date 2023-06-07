@@ -13,16 +13,16 @@ function Menu(props){
                 <div className="collapse navbar-collapse" id='menu'>
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <NavLink to={"/ex1"} className="nav-link">Ex-1</NavLink>
+                            <NavLink to={"/ex1"} className="nav-link">Ex1</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink to={"/ex2"} className="nav-link">Ex-2</NavLink>
+                            <NavLink to={"/ex2"} className="nav-link">Ex2</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink to={"/ex3"} className="nav-link">Ex-3</NavLink>
+                            <NavLink to={"/ex3"} className="nav-link">Ex3</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink to={"/ex4"} className="nav-link">Ex-4</NavLink>
+                            <NavLink to={"/ex4"} className="nav-link">Ex4</NavLink>
                         </li>
                     </ul>
 
