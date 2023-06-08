@@ -18,6 +18,10 @@ useEffect((=>{
 return ()=>{}
 },[]))
  */
+
+// pagination doesnot need load on server
+
+
 function Ex2(props) {
   const [post,setPost]= useState([])
 
@@ -48,6 +52,15 @@ function Ex2(props) {
     setPageCount(pCount) 
 
   },[post])
+
+  //page click handler
+
+  const handler = (e)=>{
+    console.log("item = " ,e.selected)
+    const newOffset = (e.selected * props.itemsPerPage)% post.length
+    console.log("newoffset=",newOffset)
+    setItemOffset(newOffset)
+  }
 
 
  return(
@@ -98,6 +111,8 @@ function Ex2(props) {
         previousClassName='page-item'
         previousLinkClassName='page-link'
         activeClassName='active'
+        activeLinkClassName='active'
+        onPageChange={handler}
         
         />
       </div>
